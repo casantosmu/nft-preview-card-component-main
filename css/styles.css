@@ -40,11 +40,30 @@ body {
 /*==================== CARD ====================*/
 .card {
   margin: auto;
+  padding: 1.5rem;
+  border: royalblue 1px solid;
+  max-width: 327px;
+}
+
+.card__img {
+  margin-bottom: 2rem;
+  border: royalblue 1px solid;
+}
+
+.card__heading,
+.card__description {
+  margin-bottom: 1.5rem;
   border: royalblue 1px solid;
 }
 
 .card__info {
   justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.card__pricing-icon,
+.card__date-icon {
+  margin-right: .5rem;
 }
 
 .card__pricing>*,
@@ -52,4 +71,9 @@ body {
 .card__author>* {
   display: inline-block;
   vertical-align: middle;
+}
+
+.card__author-img {
+  width: 32px;
+  margin-right: 1rem;
 }
