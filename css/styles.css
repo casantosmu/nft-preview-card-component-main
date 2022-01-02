@@ -1,0 +1,104 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Outfit', sans-serif;
+  --normal-font-size: 18px;
+  --light-font: 300;
+  --regular-font: 400;
+  --semi-bold-font: 600;
+}
+
+/*==================== BASE ====================*/
+body {
+  font-family: var(--body-font);
+  color: var(--soft-blue);
+  background-color: var(--main-bg);
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.container {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/*==================== TYPOGRAPHY ====================*/
+.card__heading {
+  color: var(--white);
+  font-weight: var(--semi-bold-font);
+}
+
+.card__description {
+  font-weight: var(--light-font);
+}
+
+.card__pricing-number {
+  color: var(--cyan);
+  font-weight: var(--semi-bold-font);
+}
+
+.card__author-name {
+  color: var(--white);
+}
+
+/*==================== CARD ====================*/
+.card {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 327px;
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+}
+
+.card__img {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__heading,
+.card__description {
+  margin-bottom: .75rem;
+}
+
+.card__info {
+  justify-content: space-between;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--line)
+}
+
+.card__pricing-icon,
+.card__date-icon {
+  margin-right: .25rem;
+}
+
+.card__pricing>*,
+.card__date>*,
+.card__author>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card__author-img-circle {
+  margin-right: .75rem;
+  border-radius: 100%;
+  border: 1px solid var(--white);
+}
+
+.card__author-img {
+  width: 32px;
+}

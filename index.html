@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="css/reset.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--====================  GOOGLE FONTS ====================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <main>
+    <div class="container flex">
+      <!--==================== NFT Card ====================-->
+      <article class="card">
+        <header class="card__header">
+          <img src="images/image-equilibrium.jpg" alt="Equilibrium #3429 image" class="card__img">
 
-  Equilibrium #3429
+          <h1 class="card__heading">Equilibrium #3429
+          </h1>
+        </header>
 
-  Our Equilibrium collection promotes balance and calm.
+        <p class="card__description">Our Equilibrium collection promotes balance and calm.
+        </p>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <div class="card__info flex">
+          <div class="card__pricing">
+            <img src="images/icon-ethereum.svg" alt="" class="card__pricing-icon">
+            <p class="card__pricing-number">0.041 ETH
+            </p>
+          </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="card__date">
+            <img src="images/icon-clock.svg" alt="" class="card__date-icon">
+            <p class="card__date-number">3 days left
+            </p>
+          </div>
+        </div>
+
+        <footer class="card__author">
+          <div class="card__author-img-circle">
+            <img src="images/image-avatar.png" alt="" class="card__author-img">
+          </div>
+          <p class="card__author-info"> Creation of <span class="card__author-name">Jules Wyvern</span>
+          </p>
+        </footer>
+      </article>
+    </div>
+  </main>
 </body>
+
 </html>
