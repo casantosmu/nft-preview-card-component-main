@@ -36,3 +36,20 @@ body {
 .flex {
   display: flex;
 }
+
+/*==================== CARD ====================*/
+.card {
+  margin: auto;
+  border: royalblue 1px solid;
+}
+
+.card__info {
+  justify-content: space-between;
+}
+
+.card__pricing>*,
+.card__date>*,
+.card__author>* {
+  display: inline-block;
+  vertical-align: middle;
+}
