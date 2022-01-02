@@ -18,3 +18,21 @@
   --regular-font: 400;
   --semi-bold-font: 600;
 }
+
+/*==================== BASE ====================*/
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--soft-blue);
+  background-color: var(--main-bg);
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.container {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
