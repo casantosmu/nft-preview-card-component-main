@@ -22,7 +22,6 @@
 /*==================== BASE ====================*/
 body {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
   color: var(--soft-blue);
   background-color: var(--main-bg);
 }
@@ -35,6 +34,25 @@ body {
 
 .flex {
   display: flex;
+}
+
+/*==================== TYPOGRAPHY ====================*/
+.card__heading {
+  color: var(--white);
+  font-weight: var(--semi-bold-font);
+}
+
+.card__description {
+  font-weight: var(--light-font);
+}
+
+.card__pricing-number {
+  color: var(--cyan);
+  font-weight: var(--semi-bold-font);
+}
+
+.card__author-name {
+  color: var(--white);
 }
 
 /*==================== CARD ====================*/
